@@ -1,0 +1,10 @@
+version: "0.5"
+
+processes:
+  test-process:
+    command: "sleep 30"
+    restart: always
+    
+  another-process:
+    command: "echo 'Hello from process 2' && sleep 60"
+    restart: always
